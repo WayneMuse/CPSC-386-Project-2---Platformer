@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckdgexg2hf11p"]
+
+[ext_resource type="AudioStream" uid="uid://csqtidl6yowe2" path="res://Assets/Sound/30_Jump_03.wav" id="1_47cor"]
+[ext_resource type="Script" uid="uid://c2cyi17nr6pqu" path="res://Scripts/AudioManager.gd" id="1_v2e74"]
+[ext_resource type="AudioStream" uid="uid://fkjsjgsrklud" path="res://Assets/Sound/coin collect.mp3" id="2_v2e74"]
+[ext_resource type="AudioStream" uid="uid://dqcyldynkqud5" path="res://Assets/Sound/charactedeath.mp3" id="3_6jtn3"]
+[ext_resource type="AudioStream" uid="uid://binvia0wfjt40" path="res://Assets/Sound/levelsucess.mp3" id="4_pugq7"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_v2e74")
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_47cor")
+volume_db = 5.0
+bus = &"SFX"
+
+[node name="Dash" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
+
+[node name="Collect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_v2e74")
+bus = &"SFX"
+
+[node name="Death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_6jtn3")
+bus = &"SFX"
+
+[node name="Success" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_pugq7")

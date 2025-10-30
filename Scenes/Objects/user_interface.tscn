@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7iekwtv0f6s2"]
+
+[ext_resource type="Script" uid="uid://bxcxt2hwt17m5" path="res://Scripts/game_ui.gd" id="1_i7dvk"]
+[ext_resource type="Texture2D" uid="uid://nl5a88ie4q4j" path="res://Assets/Sprites/Single Coin.png" id="1_kxhmu"]
+
+[node name="UserInterface" type="CanvasLayer"]
+
+[node name="GameUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_i7dvk")
+
+[node name="ScoreTexture" type="TextureRect" parent="GameUI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_kxhmu")
+
+[node name="ScoreLabel" type="Label" parent="GameUI"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 10.0
+offset_right = 90.0
+offset_bottom = 33.0
+text = "x 0"

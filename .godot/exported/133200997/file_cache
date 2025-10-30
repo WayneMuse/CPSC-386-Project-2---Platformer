@@ -1,0 +1,15 @@
+res://Scenes/Levels/controls.tscn::dc70551a595509d42774fd71b386f5cd::1760679515::res://.godot/exported/133200997/export-87b59340f82642f3b2ea5b1b641064df-controls.scn
+res://Scenes/Levels/DemoLevel.tscn::278e0563cfe765460225f002df3e0cb3::1760679514::res://.godot/exported/133200997/export-9dfe23f659f42502ea439be6c5b30cdf-DemoLevel.scn
+res://Scenes/Levels/level2.tscn::7618936006d737e353319733de8501a5::1760679514::res://.godot/exported/133200997/export-6b5c44a8e3f463c61c6b99657cdc44f3-level2.scn
+res://Scenes/Levels/main_menu.tscn::d777bb31caacb63401ab6e04605862a2::1760679514::res://.godot/exported/133200997/export-bec25f243620e23792f0238bca0c0663-main_menu.scn
+res://Scenes/Levels/settings.tscn::cd95b4843199781c241c4f3cae219de9::1760679515::res://.godot/exported/133200997/export-d819c45c924271652d44ec4ef26866a4-settings.scn
+res://Scenes/Levels/winscreen.tscn::39997ce4a0b4771e93d6eae5e73fed5b::1760679515::res://.godot/exported/133200997/export-d440ff966ce52d5a37ced4e5f025855d-winscreen.scn
+res://Scenes/Objects/AudioManager.tscn::fdd4aa8439ea6fe91bdc6a4524b82650::1760679514::res://.godot/exported/133200997/export-9c7f4f1ab77d26e779e4fa87fdc54c23-AudioManager.scn
+res://Scenes/Objects/coin.tscn::7880a7e53d2be23d57b620636503ae17::1760679514::res://.godot/exported/133200997/export-cd05803a40daf1f4deec8362756d6f03-coin.scn
+res://Scenes/Objects/door.tscn::db7cfd452b3abee96caf9fa15c9f5ea7::1760679514::res://.godot/exported/133200997/export-7cffa8ed24f3888750df26298826916f-door.scn
+res://Scenes/Objects/Player.tscn::e8332fdda6bd5dc611ca32b394c4eecf::1760679514::res://.godot/exported/133200997/export-39addcdbd4694d38b3321de77ff1a1ad-Player.scn
+res://Scenes/Objects/SceneTransition.tscn::c0a6442b8b84ba2f284f1f7aa9679d95::1760679514::res://.godot/exported/133200997/export-71d8390fc543a102aab82022219b8e8d-SceneTransition.scn
+res://Scenes/Objects/spike.tscn::ffe4418cedaa216cb6ad8a88f00bf607::1760679514::res://.godot/exported/133200997/export-c9056ffd80a0321aa36d1f034594e211-spike.scn
+res://Scenes/Objects/user_interface.tscn::36cb18349253c5fbee7757d095fb18ff::1760679515::res://.godot/exported/133200997/export-c33b0184a6b057a8f15016bd70c79221-user_interface.scn
+res://default_bus_layout.tres::fd973a755f2d0d0d323e16058845ff2e::1760600827::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://default_env.tres::c48b56c1ae4e516a6e7e732a075cf7c3::1760679515::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res

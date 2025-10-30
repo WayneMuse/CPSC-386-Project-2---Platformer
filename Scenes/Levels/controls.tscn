@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://h4hd8go4d75g"]
+
+[ext_resource type="Script" uid="uid://v1yp25xfk41n" path="res://Scripts/controls.gd" id="1_jjiey"]
+
+[node name="Controls" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jjiey")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -109.5
+offset_bottom = 109.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ControlsText" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+text = "MOVEMENT - WASD
+JUMP - SPACEBAR
+DASH - SHIFT
+WALL JUMP - SPACEBAR AND TOUCHING WALL
+
+PAUSE - P
+QUIT - TAB
+MAIN MENU - ESC
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_direction = 1
+layout_mode = 2
+text = "Main Menu"

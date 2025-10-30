@@ -1,0 +1,14 @@
+res://default_env.tres
+res://Scenes/Levels/DemoLevel.tscn
+res://Scenes/Levels/level2.tscn
+res://Scenes/Objects/Player.tscn
+res://Scenes/Objects/door.tscn
+res://Scenes/Objects/AudioManager.tscn
+res://Scenes/Objects/SceneTransition.tscn
+res://Scenes/Objects/spike.tscn
+res://Scenes/Objects/coin.tscn
+res://Scenes/Levels/main_menu.tscn
+res://Scenes/Levels/settings.tscn
+res://Scenes/Levels/controls.tscn
+res://Scenes/Levels/winscreen.tscn
+res://Scenes/Objects/user_interface.tscn
