@@ -1,0 +1,81 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsej7px63vceb"]
+
+[ext_resource type="Script" uid="uid://bqahov5b3xshl" path="res://Scripts/PauseMenu.gd" id="1_ds4rd"]
+
+[node name="Esc Menu" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -132.0
+offset_right = 64.0
+offset_bottom = 124.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_ds4rd")
+
+[node name="MainMenuButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+text = "Main Menu"
+
+[node name="SaveGameButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 48.0
+offset_bottom = 79.0
+grow_horizontal = 2
+text = "Save Game"
+
+[node name="LoadGameButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 96.0
+offset_bottom = 127.0
+grow_horizontal = 2
+text = "Load Save
+"
+
+[node name="NextLevelButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 144.0
+offset_bottom = 175.0
+grow_horizontal = 2
+text = "Next Level"
+
+[node name="QuitGameButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 192.0
+offset_bottom = 223.0
+grow_horizontal = 2
+text = "Quit Game"
+
+[node name="Panel" type="Panel" parent="Control"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -136.0
+offset_right = 72.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2

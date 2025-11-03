@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c22ua4j0wnfah"]
+[gd_scene load_steps=19 format=3 uid="uid://c22ua4j0wnfah"]
 
 [ext_resource type="PackedScene" uid="uid://dktfkv618oiy7" path="res://Scenes/Objects/Player.tscn" id="1_jmi30"]
 [ext_resource type="Texture2D" uid="uid://cha4le62ormcv" path="res://Assets/Sprites/TerrainTileSet.png" id="2_ecn0q"]
@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://42oiec8xkui7" path="res://Scenes/Objects/coin.tscn" id="8_2cqch"]
 [ext_resource type="Texture2D" uid="uid://dxcwcsaj2o7k1" path="res://Assets/Sprites/GoldCoin.png" id="9_4ry55"]
 [ext_resource type="Texture2D" uid="uid://dkry00ime0bw7" path="res://Assets/Sprites/SpikeTile.png" id="9_5tq36"]
-[ext_resource type="PackedScene" uid="uid://c7iekwtv0f6s2" path="res://Scenes/Objects/user_interface.tscn" id="11_njlv2"]
 [ext_resource type="Script" uid="uid://cr70yhq86w430" path="res://Scripts/GameManager.gd" id="12_einaa"]
 [ext_resource type="AudioStream" uid="uid://3dh8wubhktqo" path="res://Assets/Sound/InGameMusic.mp3" id="13_a2xkn"]
 
@@ -6363,8 +6362,6 @@ layer_0/tile_data = PackedInt32Array(1048594, 0, 0, 1048595, 0, 0, 1048596, 0, 0
 tile_set = SubResource("TileSet_4ry55")
 format = 2
 layer_0/tile_data = PackedInt32Array(655380, 1, 0, 655403, 1, 0, 655409, 1, 0, 655426, 1, 0, 458824, 1, 0, -917375, 1, 0)
-
-[node name="UserInterface" parent="." instance=ExtResource("11_njlv2")]
 
 [node name="GameManager" type="Node" parent="."]
 script = ExtResource("12_einaa")

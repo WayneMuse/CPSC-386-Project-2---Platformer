@@ -1,7 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://dktfkv618oiy7"]
+[gd_scene load_steps=13 format=3 uid="uid://dktfkv618oiy7"]
 
 [ext_resource type="Texture2D" uid="uid://btqb8741k3suc" path="res://Assets/Sprites/PlayerSpriteSheet.png" id="1"]
 [ext_resource type="Script" uid="uid://u7fsqe1suu3c" path="res://Scripts/Player.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://c7iekwtv0f6s2" path="res://Scenes/Objects/user_interface.tscn" id="3_5f5w1"]
+[ext_resource type="PackedScene" uid="uid://dsej7px63vceb" path="res://Scenes/Objects/esc_menu.tscn" id="4_r6m6p"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(18.6332, 22.8372)
@@ -146,3 +148,8 @@ autoplay = "Idle"
 zoom = Vector2(1.5, 1.5)
 limit_smoothed = true
 position_smoothing_speed = 15.0
+
+[node name="UserInterface" parent="." instance=ExtResource("3_5f5w1")]
+
+[node name="Esc Menu" parent="." instance=ExtResource("4_r6m6p")]
+visible = false

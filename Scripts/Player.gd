@@ -4,6 +4,7 @@ extends CharacterBody2D
 var states          = ["idle", "run", "dash", "fall", "jump", "double_jump"]
 var currentState    = states[0]
 var previousState   = null
+var showingMenu 	= false
 
 # ───────────── SPRITES & ANIMATION ─────────────
 @onready var PlayerSprite     = $Sprite2D
@@ -107,8 +108,17 @@ func get_input():
 		get_tree().quit()
 	
 	if Input.is_action_just_pressed("Menu"):
-		queue_free()
-		get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
+		
+		if !showingMenu:
+			print("Menu Open")
+			$"Esc Menu".show()
+			showingMenu = true
+		else:
+			print('Menu Close')
+			$'Esc Menu'.hide()
+			showingMenu = false
+		#queue_free()
+		#get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
 	
 	#if Input.is_action_just_pressed("Pause"):
 	#	print("Pause toggled")
