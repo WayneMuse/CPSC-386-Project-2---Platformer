@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1761801080
+::res://::1761871750
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::8221580075216934982::1760600827::0::1::::<><><>0<>0<><>::
-default_env.tres::Environment::4615900082429763521::1760679515::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1760679730::0::1::::<><><>0<>0<><>::
+default_env.tres::Environment::4615900082429763521::1761801094::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1760679730::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::8653688466588151767::1760594858::1760594884::1::::<><><>0<>0<>946f0a088b9e076f702cd6be63a704c7<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
-README.md::TextFile::-1::1761800957::0::1::::<><><>0<>0<><>::
+README.md::TextFile/TextFile::-1::1761800957::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1761801026
 ::res://Assets/Sound/::1761801026
 30_Jump_03.wav::AudioStreamWAV/AudioStreamWAV::6070438682153588491::1760656644::1760656655::1::::<><><>0<>0<>55bb82c38e27375abbe00eaf5e0c635e<>res://.godot/imported/30_Jump_03.wav-330a456fd1b40e848c415ffacb7bb61a.sample::
@@ -27,22 +27,22 @@ Single Coin.png::CompressedTexture2D/CompressedTexture2D::936986416991160971::17
 SpikeTile.png::CompressedTexture2D/CompressedTexture2D::7897748087946404632::1760646591::1760646652::1::::<><><>0<>0<>0a8fb066925c9e664d58ef709b70a356<>res://.godot/imported/SpikeTile.png-95d710a00c744253284e428556bf819c.ctex::
 TerrainTileSet.png::CompressedTexture2D/CompressedTexture2D::5265943968604094865::1760594858::1760600062::1::::<><><>0<>0<>91bf3a41192a0e2caa79c0e32e48a095<>res://.godot/imported/TerrainTileSet.png-c8d0209708bea0543f0de9e56d2bf468.ctex::
 ::res://Scenes/::1761801026
-::res://Scenes/Levels/::1761801026
-controls.tscn::PackedScene::551620979879426986::1760679515::0::1::::<><><>0<>0<><>::uid://v1yp25xfk41n::::res://Scripts/controls.gd
-DemoLevel.tscn::PackedScene::6724894223074215363::1760679514::0::1::::<><><>0<>0<><>::uid://dktfkv618oiy7::::res://Scenes/Objects/Player.tscn<>uid://cha4le62ormcv::::res://Assets/Sprites/TerrainTileSet.png<>uid://h7ye2y74qngt::::res://Assets/Sprites/background0.png<>uid://b3ew3smby2m52::::res://Scenes/Objects/door.tscn<>uid://blte2q8dea23i::::res://Scripts/maping.gd<>uid://cpw42jbfewd35::::res://Scenes/Levels/level2.tscn<>uid://c61lva6dhrp3t::::res://Scenes/Objects/spike.tscn<>uid://42oiec8xkui7::::res://Scenes/Objects/coin.tscn<>uid://dxcwcsaj2o7k1::::res://Assets/Sprites/GoldCoin.png<>uid://dkry00ime0bw7::::res://Assets/Sprites/SpikeTile.png<>uid://c7iekwtv0f6s2::::res://Scenes/Objects/user_interface.tscn<>uid://cr70yhq86w430::::res://Scripts/GameManager.gd<>uid://3dh8wubhktqo::::res://Assets/Sound/InGameMusic.mp3
-level2.tscn::PackedScene::5872899816260009906::1760679514::0::1::::<><><>0<>0<><>::uid://dktfkv618oiy7::::res://Scenes/Objects/Player.tscn<>uid://h7ye2y74qngt::::res://Assets/Sprites/background0.png<>uid://b3ew3smby2m52::::res://Scenes/Objects/door.tscn<>uid://blte2q8dea23i::::res://Scripts/maping.gd<>uid://bkcra85hdiytf::::res://Scenes/Levels/winscreen.tscn<>uid://c61lva6dhrp3t::::res://Scenes/Objects/spike.tscn<>uid://42oiec8xkui7::::res://Scenes/Objects/coin.tscn<>uid://cha4le62ormcv::::res://Assets/Sprites/TerrainTileSet.png<>uid://dkry00ime0bw7::::res://Assets/Sprites/SpikeTile.png<>uid://dxcwcsaj2o7k1::::res://Assets/Sprites/GoldCoin.png<>uid://c7iekwtv0f6s2::::res://Scenes/Objects/user_interface.tscn<>uid://3dh8wubhktqo::::res://Assets/Sound/InGameMusic.mp3
-main_menu.tscn::PackedScene::9178508849476024237::1760679514::0::1::::<><><>0<>0<><>::uid://xg2peasheup1::::res://Scripts/main_menu.gd<>uid://h7ye2y74qngt::::res://Assets/Sprites/background0.png<>uid://dv821em0jfanj::::res://Assets/Sound/MainMenuMusic.mp3
-settings.tscn::PackedScene::8559840669761477885::1760679515::0::1::::<><><>0<>0<><>::uid://qgyaymfx4j7e::::res://Scripts/settings.gd
-winscreen.tscn::PackedScene::3093471844395661371::1760679515::0::1::::<><><>0<>0<><>::uid://b3ua0j48xiifx::::res://Scripts/winscreen.gd
-::res://Scenes/Objects/::1761801026
-AudioManager.tscn::PackedScene::5481295600703141731::1760679514::0::1::::<><><>0<>0<><>::uid://csqtidl6yowe2::::res://Assets/Sound/30_Jump_03.wav<>uid://c2cyi17nr6pqu::::res://Scripts/AudioManager.gd<>uid://fkjsjgsrklud::::res://Assets/Sound/coin collect.mp3<>uid://dqcyldynkqud5::::res://Assets/Sound/charactedeath.mp3<>uid://binvia0wfjt40::::res://Assets/Sound/levelsucess.mp3
-coin.tscn::PackedScene::2092079203826053344::1760679514::0::1::::<><><>0<>0<><>::uid://capporg8yfkug::::res://Scripts/coin.gd<>uid://dxcwcsaj2o7k1::::res://Assets/Sprites/GoldCoin.png
-door.tscn::PackedScene::4361352556680985407::1760679514::0::1::::<><><>0<>0<><>::uid://dwsqsw0k7kq5e::::res://Assets/Sprites/Dimensional_Portal.png<>uid://k6aaq226f6nx::::res://Scripts/door.gd
-Player.tscn::PackedScene::7900696259794914416::1760679514::0::1::::<><><>0<>0<><>::uid://btqb8741k3suc::::res://Assets/Sprites/PlayerSpriteSheet.png<>uid://u7fsqe1suu3c::::res://Scripts/Player.gd
-SceneTransition.tscn::PackedScene::4586814363756221592::1760679514::0::1::::<><><>0<>0<><>::uid://camed424timd3::::res://Scripts/SceneTransition.gd
+::res://Scenes/Levels/::1761801093
+controls.tscn::PackedScene::551620979879426986::1761801093::0::1::::<><><>0<>0<><>::uid://v1yp25xfk41n::::res://Scripts/controls.gd
+DemoLevel.tscn::PackedScene::6724894223074215363::1761801090::0::1::::<><><>0<>0<><>::uid://dktfkv618oiy7::::res://Scenes/Objects/Player.tscn<>uid://cha4le62ormcv::::res://Assets/Sprites/TerrainTileSet.png<>uid://h7ye2y74qngt::::res://Assets/Sprites/background0.png<>uid://b3ew3smby2m52::::res://Scenes/Objects/door.tscn<>uid://blte2q8dea23i::::res://Scripts/maping.gd<>uid://cpw42jbfewd35::::res://Scenes/Levels/level2.tscn<>uid://c61lva6dhrp3t::::res://Scenes/Objects/spike.tscn<>uid://42oiec8xkui7::::res://Scenes/Objects/coin.tscn<>uid://dxcwcsaj2o7k1::::res://Assets/Sprites/GoldCoin.png<>uid://dkry00ime0bw7::::res://Assets/Sprites/SpikeTile.png<>uid://c7iekwtv0f6s2::::res://Scenes/Objects/user_interface.tscn<>uid://cr70yhq86w430::::res://Scripts/GameManager.gd<>uid://3dh8wubhktqo::::res://Assets/Sound/InGameMusic.mp3
+level2.tscn::PackedScene::5872899816260009906::1761801091::0::1::::<><><>0<>0<><>::uid://dktfkv618oiy7::::res://Scenes/Objects/Player.tscn<>uid://h7ye2y74qngt::::res://Assets/Sprites/background0.png<>uid://b3ew3smby2m52::::res://Scenes/Objects/door.tscn<>uid://blte2q8dea23i::::res://Scripts/maping.gd<>uid://bkcra85hdiytf::::res://Scenes/Levels/winscreen.tscn<>uid://c61lva6dhrp3t::::res://Scenes/Objects/spike.tscn<>uid://42oiec8xkui7::::res://Scenes/Objects/coin.tscn<>uid://cha4le62ormcv::::res://Assets/Sprites/TerrainTileSet.png<>uid://dkry00ime0bw7::::res://Assets/Sprites/SpikeTile.png<>uid://dxcwcsaj2o7k1::::res://Assets/Sprites/GoldCoin.png<>uid://c7iekwtv0f6s2::::res://Scenes/Objects/user_interface.tscn<>uid://3dh8wubhktqo::::res://Assets/Sound/InGameMusic.mp3
+main_menu.tscn::PackedScene::9178508849476024237::1761801092::0::1::::<><><>0<>0<><>::uid://xg2peasheup1::::res://Scripts/main_menu.gd<>uid://h7ye2y74qngt::::res://Assets/Sprites/background0.png<>uid://dv821em0jfanj::::res://Assets/Sound/MainMenuMusic.mp3
+settings.tscn::PackedScene::8559840669761477885::1761801093::0::1::::<><><>0<>0<><>::uid://qgyaymfx4j7e::::res://Scripts/settings.gd
+winscreen.tscn::PackedScene::3093471844395661371::1761801093::0::1::::<><><>0<>0<><>::uid://b3ua0j48xiifx::::res://Scripts/winscreen.gd
+::res://Scenes/Objects/::1761801093
+AudioManager.tscn::PackedScene::5481295600703141731::1761801092::0::1::::<><><>0<>0<><>::uid://csqtidl6yowe2::::res://Assets/Sound/30_Jump_03.wav<>uid://c2cyi17nr6pqu::::res://Scripts/AudioManager.gd<>uid://fkjsjgsrklud::::res://Assets/Sound/coin collect.mp3<>uid://dqcyldynkqud5::::res://Assets/Sound/charactedeath.mp3<>uid://binvia0wfjt40::::res://Assets/Sound/levelsucess.mp3
+coin.tscn::PackedScene::2092079203826053344::1761801092::0::1::::<><><>0<>0<><>::uid://capporg8yfkug::::res://Scripts/coin.gd<>uid://dxcwcsaj2o7k1::::res://Assets/Sprites/GoldCoin.png
+door.tscn::PackedScene::4361352556680985407::1761801091::0::1::::<><><>0<>0<><>::uid://dwsqsw0k7kq5e::::res://Assets/Sprites/Dimensional_Portal.png<>uid://k6aaq226f6nx::::res://Scripts/door.gd
+Player.tscn::PackedScene::7900696259794914416::1761801091::0::1::::<><><>0<>0<><>::uid://btqb8741k3suc::::res://Assets/Sprites/PlayerSpriteSheet.png<>uid://u7fsqe1suu3c::::res://Scripts/Player.gd
+SceneTransition.tscn::PackedScene::4586814363756221592::1761801092::0::1::::<><><>0<>0<><>::uid://camed424timd3::::res://Scripts/SceneTransition.gd
 spike.gd::GDScript/GDScript::5688483367493131852::1760648831::0::1::::<>Area2D<><>0<>0<><>::
-spike.tscn::PackedScene::7003074778398478111::1760679514::0::1::::<><><>0<>0<><>::uid://dkry00ime0bw7::::res://Assets/Sprites/SpikeTile.png<>uid://cnbsqwntuamb1::::res://Scenes/Objects/spike.gd
-user_interface.tscn::PackedScene::7035661297598603795::1760679515::0::1::::<><><>0<>0<><>::uid://bxcxt2hwt17m5::::res://Scripts/game_ui.gd<>uid://nl5a88ie4q4j::::res://Assets/Sprites/Single Coin.png
+spike.tscn::PackedScene::7003074778398478111::1761801092::0::1::::<><><>0<>0<><>::uid://dkry00ime0bw7::::res://Assets/Sprites/SpikeTile.png<>uid://cnbsqwntuamb1::::res://Scenes/Objects/spike.gd
+user_interface.tscn::PackedScene::7035661297598603795::1761801093::0::1::::<><><>0<>0<><>::uid://bxcxt2hwt17m5::::res://Scripts/game_ui.gd<>uid://nl5a88ie4q4j::::res://Assets/Sprites/Single Coin.png
 ::res://Scripts/::1761801027
 AudioManager.gd::GDScript/GDScript::6673541810954289944::1760666638::0::1::::<>Node<><>0<>0<><>::
 coin.gd::GDScript/GDScript::4804743693400693022::1760659396::0::1::::<>Area2D<><>0<>0<><>::

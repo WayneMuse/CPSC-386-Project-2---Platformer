@@ -12,3 +12,4 @@ res://Scenes/Levels/settings.tscn
 res://Scenes/Levels/controls.tscn
 res://Scenes/Levels/winscreen.tscn
 res://Scenes/Objects/user_interface.tscn
+res://Scripts/Player.gd
