@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c22ua4j0wnfah"]
+[gd_scene load_steps=20 format=3 uid="uid://c22ua4j0wnfah"]
 
 [ext_resource type="PackedScene" uid="uid://dktfkv618oiy7" path="res://Scenes/Objects/Player.tscn" id="1_jmi30"]
 [ext_resource type="Texture2D" uid="uid://cha4le62ormcv" path="res://Assets/Sprites/TerrainTileSet.png" id="2_ecn0q"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://42oiec8xkui7" path="res://Scenes/Objects/coin.tscn" id="8_2cqch"]
 [ext_resource type="Texture2D" uid="uid://dxcwcsaj2o7k1" path="res://Assets/Sprites/GoldCoin.png" id="9_4ry55"]
 [ext_resource type="Texture2D" uid="uid://dkry00ime0bw7" path="res://Assets/Sprites/SpikeTile.png" id="9_5tq36"]
+[ext_resource type="PackedScene" uid="uid://dsej7px63vceb" path="res://Scenes/Objects/esc_menu.tscn" id="12_a2xkn"]
 [ext_resource type="Script" uid="uid://cr70yhq86w430" path="res://Scripts/GameManager.gd" id="12_einaa"]
 [ext_resource type="AudioStream" uid="uid://3dh8wubhktqo" path="res://Assets/Sound/InGameMusic.mp3" id="13_a2xkn"]
 
@@ -6372,3 +6373,5 @@ volume_db = -10.0
 autoplay = true
 bus = &"Music"
 parameters/looping = true
+
+[node name="Esc Menu" parent="." instance=ExtResource("12_a2xkn")]

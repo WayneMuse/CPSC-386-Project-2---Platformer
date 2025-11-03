@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bqahov5b3xshl" path="res://Scripts/PauseMenu.gd" id="1_ds4rd"]
 
 [node name="Esc Menu" type="CanvasLayer"]
+visible = false
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -21,6 +22,7 @@ size_flags_horizontal = 0
 script = ExtResource("1_ds4rd")
 
 [node name="MainMenuButton" type="Button" parent="Control"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -29,6 +31,7 @@ grow_horizontal = 2
 text = "Main Menu"
 
 [node name="SaveGameButton" type="Button" parent="Control"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -38,6 +41,7 @@ grow_horizontal = 2
 text = "Save Game"
 
 [node name="LoadGameButton" type="Button" parent="Control"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -48,6 +52,7 @@ text = "Load Save
 "
 
 [node name="NextLevelButton" type="Button" parent="Control"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -57,6 +62,7 @@ grow_horizontal = 2
 text = "Next Level"
 
 [node name="QuitGameButton" type="Button" parent="Control"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -66,7 +72,6 @@ grow_horizontal = 2
 text = "Quit Game"
 
 [node name="Panel" type="Panel" parent="Control"]
-show_behind_parent = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -79,3 +84,4 @@ offset_right = 72.0
 offset_bottom = 112.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2

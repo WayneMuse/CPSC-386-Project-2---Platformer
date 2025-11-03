@@ -22,6 +22,7 @@ config/icon="uid://nl5a88ie4q4j"
 AudioManager="*res://Scenes/Objects/AudioManager.tscn"
 SceneTransition="*res://Scenes/Objects/SceneTransition.tscn"
 GameManager="*res://Scripts/GameManager.gd"
+EscMenu="*res://Scenes/Objects/esc_menu.tscn"
 
 [display]
 

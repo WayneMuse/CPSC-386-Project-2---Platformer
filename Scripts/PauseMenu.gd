@@ -1,13 +1,20 @@
 extends Control
 
-@onready var MainMenu = $MainMenuButton
-@onready var SaveGame = $SaveGameButton
-@onready var LoadGame = $LoadGameButton
-@onready var NextLevel = $NextLevelButton
-@onready var QuitGame = $QuitGameButton
-
+var MainMenu
+var SaveGame
+var LoadGame
+var NextLevel
+var QuitGame
 
 func _ready():
+	# Assign buttons manually
+	MainMenu = $MainMenuButton
+	SaveGame = $SaveGameButton
+	LoadGame = $LoadGameButton
+	NextLevel = $NextLevelButton
+	QuitGame = $QuitGameButton
+
+	# Connect button signals
 	MainMenu.pressed.connect(_on_main_menu_pressed)
 	LoadGame.pressed.connect(_on_load_game_pressed)
 	SaveGame.pressed.connect(_on_save__game_pressed)
@@ -15,23 +22,25 @@ func _ready():
 	NextLevel.pressed.connect(_on_next_level_pressed)
 
 func _on_next_level_pressed() -> void:
+	$"/root/EscMenu".hide()
 	get_tree().change_scene_to_file("res://Scenes/Levels/controls.tscn")
 
 func _on_main_menu_pressed():
-	GameManager.score = 0
-	GameManager.lastLevel = "Area1"
-	get_tree().change_scene_to_file("res://Scenes/Levels/DemoLevel.tscn")
+	$"/root/EscMenu".hide()
+	get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
 
 func _on_load_game_pressed():
-	if GameManager.lastLevel == "Main":
-		get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
-	if GameManager.lastLevel == "Area1":
-		get_tree().change_scene_to_file("res://Scenes/Levels/DemoLevel.tscn")
-	if GameManager.lastLevel == "Area2":
-		get_tree().change_scene_to_file("res://Scenes/Levels/level2.tscn")
+	$"/root/EscMenu".hide()
+	match GameManager.lastLevel:
+		"Main":
+			get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
+		"Area1":
+			get_tree().change_scene_to_file("res://Scenes/Levels/DemoLevel.tscn")
+		"Area2":
+			get_tree().change_scene_to_file("res://Scenes/Levels/level2.tscn")
 
 func _on_save__game_pressed():
-
+	$"/root/EscMenu".hide()
 	get_tree().change_scene_to_file("res://Scenes/Levels/settings.tscn")
 
 func _on_quit_pressed():
