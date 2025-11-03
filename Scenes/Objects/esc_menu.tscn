@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bqahov5b3xshl" path="res://Scripts/PauseMenu.gd" id="1_ds4rd"]
 
 [node name="Esc Menu" type="CanvasLayer"]
+process_mode = 3
 visible = false
 
 [node name="Control" type="Control" parent="."]

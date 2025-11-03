@@ -13,10 +13,7 @@ func _ready():
 
 func _input(event):
 	if event.is_action_pressed("Pause") and pause_ready:
-		pause_ready = false
-		game_paused = !game_paused
-		get_tree().paused = game_paused
-		print("Pause toggled:", game_paused)
+		pause_toggle()
 
 	if event.is_action_released("Pause"):
 		pause_ready = true
@@ -26,12 +23,20 @@ func _input(event):
 			print("Menu Open")
 			$"/root/EscMenu".show()
 			showingMenu = true
+			
+			pause_toggle()
 		else:
 			print("Menu Close")
 			$"/root/EscMenu".hide()
 			showingMenu = false
-		
+			
+			pause_toggle()
 
+func pause_toggle():
+		pause_ready = false
+		game_paused = !game_paused
+		get_tree().paused = game_paused
+		print("Pause toggled:", game_paused)
 
 func add_score(amount):
 	score += amount

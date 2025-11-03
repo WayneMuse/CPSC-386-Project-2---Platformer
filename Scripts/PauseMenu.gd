@@ -14,6 +14,8 @@ func _ready():
 	NextLevel = $NextLevelButton
 	QuitGame = $QuitGameButton
 
+
+	
 	# Connect button signals
 	MainMenu.pressed.connect(_on_main_menu_pressed)
 	LoadGame.pressed.connect(_on_load_game_pressed)
@@ -23,14 +25,17 @@ func _ready():
 
 func _on_next_level_pressed() -> void:
 	$"/root/EscMenu".hide()
+	GameManager.pause_toggle()
 	get_tree().change_scene_to_file("res://Scenes/Levels/controls.tscn")
 
 func _on_main_menu_pressed():
 	$"/root/EscMenu".hide()
+	GameManager.pause_toggle()
 	get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
 
 func _on_load_game_pressed():
 	$"/root/EscMenu".hide()
+	GameManager.pause_toggle()
 	match GameManager.lastLevel:
 		"Main":
 			get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
@@ -41,6 +46,7 @@ func _on_load_game_pressed():
 
 func _on_save__game_pressed():
 	$"/root/EscMenu".hide()
+	GameManager.pause_toggle()
 	get_tree().change_scene_to_file("res://Scenes/Levels/settings.tscn")
 
 func _on_quit_pressed():

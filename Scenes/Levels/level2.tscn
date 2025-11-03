@@ -6334,7 +6334,7 @@ position = Vector2(-91, -654)
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(1159, -400)
+position = Vector2(1152, -431)
 scale = Vector2(2, 2)
 texture = ExtResource("2_pyd1a")
 metadata/_edit_lock_ = true
