@@ -1,19 +1,19 @@
 [gd_scene load_steps=18 format=3 uid="uid://c22ua4j0wnfah"]
 
-[ext_resource type="PackedScene" uid="uid://dktfkv618oiy7" path="res://Scenes/Objects/Player.tscn" id="1_jmi30"]
-[ext_resource type="Texture2D" uid="uid://cha4le62ormcv" path="res://Assets/Sprites/TerrainTileSet.png" id="2_ecn0q"]
-[ext_resource type="Texture2D" uid="uid://h7ye2y74qngt" path="res://Assets/Sprites/background0.png" id="3_ecn0q"]
-[ext_resource type="PackedScene" uid="uid://b3ew3smby2m52" path="res://Scenes/Objects/door.tscn" id="4_j21xl"]
-[ext_resource type="Script" uid="uid://blte2q8dea23i" path="res://Scripts/maping.gd" id="5_7ekt8"]
-[ext_resource type="PackedScene" uid="uid://cpw42jbfewd35" path="res://Scenes/Levels/level2.tscn" id="5_at6j3"]
-[ext_resource type="PackedScene" uid="uid://c61lva6dhrp3t" path="res://Scenes/Objects/spike.tscn" id="7_h83by"]
-[ext_resource type="PackedScene" uid="uid://42oiec8xkui7" path="res://Scenes/Objects/coin.tscn" id="8_2cqch"]
-[ext_resource type="Texture2D" uid="uid://dxcwcsaj2o7k1" path="res://Assets/Sprites/GoldCoin.png" id="9_4ry55"]
-[ext_resource type="Texture2D" uid="uid://dkry00ime0bw7" path="res://Assets/Sprites/SpikeTile.png" id="9_5tq36"]
-[ext_resource type="AudioStream" uid="uid://3dh8wubhktqo" path="res://Assets/Sound/InGameMusic.mp3" id="13_a2xkn"]
+[ext_resource type="PackedScene" uid="uid://dktfkv618oiy7" path="res://Scenes/Objects/Player.tscn" id="1_ilsv2"]
+[ext_resource type="Texture2D" uid="uid://h7ye2y74qngt" path="res://Assets/Sprites/background0.png" id="2_4f2fw"]
+[ext_resource type="PackedScene" uid="uid://b3ew3smby2m52" path="res://Scenes/Objects/door.tscn" id="3_8r8ce"]
+[ext_resource type="PackedScene" uid="uid://cpw42jbfewd35" path="res://Scenes/Levels/level2.tscn" id="4_nqasx"]
+[ext_resource type="Script" uid="uid://blte2q8dea23i" path="res://Scripts/maping.gd" id="5_ryjqc"]
+[ext_resource type="PackedScene" uid="uid://c61lva6dhrp3t" path="res://Scenes/Objects/spike.tscn" id="6_xe7un"]
+[ext_resource type="PackedScene" uid="uid://42oiec8xkui7" path="res://Scenes/Objects/coin.tscn" id="7_v3vqe"]
+[ext_resource type="Texture2D" uid="uid://cha4le62ormcv" path="res://Assets/Sprites/TerrainTileSet.png" id="8_bvs0b"]
+[ext_resource type="Texture2D" uid="uid://dkry00ime0bw7" path="res://Assets/Sprites/SpikeTile.png" id="9_syfhk"]
+[ext_resource type="Texture2D" uid="uid://dxcwcsaj2o7k1" path="res://Assets/Sprites/GoldCoin.png" id="10_u45xj"]
+[ext_resource type="AudioStream" uid="uid://3dh8wubhktqo" path="res://Assets/Sound/InGameMusic.mp3" id="11_ay16s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a2xkn"]
-texture = ExtResource("2_ecn0q")
+texture = ExtResource("8_bvs0b")
 0:0/next_alternative_id = 8
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -6310,14 +6310,14 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_a2xkn")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_argyu"]
-texture = ExtResource("9_5tq36")
+texture = ExtResource("9_syfhk")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_7ekt8"]
 sources/0 = SubResource("TileSetAtlasSource_argyu")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mlijf"]
-texture = ExtResource("9_4ry55")
+texture = ExtResource("10_u45xj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6329,23 +6329,23 @@ sources/1 = SubResource("TileSetAtlasSource_mlijf")
 
 [node name="Level" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_jmi30")]
+[node name="Player" parent="." instance=ExtResource("1_ilsv2")]
 position = Vector2(40, 100)
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -2
 position = Vector2(1657, -610)
 scale = Vector2(2, 2)
-texture = ExtResource("3_ecn0q")
+texture = ExtResource("2_4f2fw")
 
-[node name="Door" parent="." instance=ExtResource("4_j21xl")]
+[node name="Door" parent="." instance=ExtResource("3_8r8ce")]
 position = Vector2(1950, -251)
-next_scene = ExtResource("5_at6j3")
+next_scene = ExtResource("4_nqasx")
 
 [node name="Maping" type="Node2D" parent="."]
-script = ExtResource("5_7ekt8")
-spike_hazard_scene = ExtResource("7_h83by")
-coin_scene = ExtResource("8_2cqch")
+script = ExtResource("5_ryjqc")
+spike_hazard_scene = ExtResource("6_xe7un")
+coin_scene = ExtResource("7_v3vqe")
 
 [node name="Map" type="TileMap" parent="Maping"]
 tile_set = SubResource("152")
@@ -6363,7 +6363,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(655380, 1, 0, 655403, 1, 0, 655409, 1, 0, 655426, 1, 0, 458824, 1, 0, -917375, 1, 0)
 
 [node name="InGameMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_a2xkn")
+stream = ExtResource("11_ay16s")
 volume_db = -10.0
 autoplay = true
 bus = &"Music"

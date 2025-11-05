@@ -1,6 +1,7 @@
 res://default_env.tres
 res://Scenes/Levels/DemoLevel.tscn
 res://Scenes/Levels/level2.tscn
+res://Scenes/Objects/esc_menu.tscn
 res://Scenes/Objects/Player.tscn
 res://Scenes/Objects/door.tscn
 res://Scenes/Objects/AudioManager.tscn
@@ -12,6 +13,8 @@ res://Scenes/Levels/settings.tscn
 res://Scenes/Levels/controls.tscn
 res://Scenes/Levels/winscreen.tscn
 res://Scenes/Objects/user_interface.tscn
-res://Scenes/Objects/esc_menu.tscn
 res://Scripts/PauseMenu.gd
 res://Scripts/GameManager.gd
+res://Scripts/SaveManager.gd
+res://Scripts/main_menu.gd
+res://Scenes/Levels/level1.tscn

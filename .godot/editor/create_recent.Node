@@ -1,3 +1,5 @@
+VBoxContainer
+LineEdit
 Camera2D
 Panel
 Button
@@ -10,6 +12,3 @@ Parallax2D
 ParallaxBackground
 CenterContainer
 RichTextLabel
-VBoxContainer
-TileMap
-TextEdit

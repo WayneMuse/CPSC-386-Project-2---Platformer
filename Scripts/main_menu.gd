@@ -19,9 +19,11 @@ func _on_controls_pressed() -> void:
 func _on_new_game_pressed():
 	GameManager.score = 0
 	GameManager.lastLevel = "Area1"
-	get_tree().change_scene_to_file("res://Scenes/Levels/DemoLevel.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/level1.tscn")
 
 func _on_load_game_pressed():
+	GameManager.load_game()
+	
 	if GameManager.lastLevel == "Main":
 		get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
 	if GameManager.lastLevel == "Area1":
@@ -30,7 +32,6 @@ func _on_load_game_pressed():
 		get_tree().change_scene_to_file("res://Scenes/Levels/level2.tscn")
 
 func _on_settings_pressed():
-
 	get_tree().change_scene_to_file("res://Scenes/Levels/settings.tscn")
 
 func _on_quit_pressed():

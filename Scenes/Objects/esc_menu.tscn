@@ -22,56 +22,6 @@ grow_vertical = 2
 size_flags_horizontal = 0
 script = ExtResource("1_ds4rd")
 
-[node name="MainMenuButton" type="Button" parent="Control"]
-z_index = 1
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 31.0
-grow_horizontal = 2
-text = "Main Menu"
-
-[node name="SaveGameButton" type="Button" parent="Control"]
-z_index = 1
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_top = 48.0
-offset_bottom = 79.0
-grow_horizontal = 2
-text = "Save Game"
-
-[node name="LoadGameButton" type="Button" parent="Control"]
-z_index = 1
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_top = 96.0
-offset_bottom = 127.0
-grow_horizontal = 2
-text = "Load Save
-"
-
-[node name="NextLevelButton" type="Button" parent="Control"]
-z_index = 1
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_top = 144.0
-offset_bottom = 175.0
-grow_horizontal = 2
-text = "Next Level"
-
-[node name="QuitGameButton" type="Button" parent="Control"]
-z_index = 1
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_top = 192.0
-offset_bottom = 223.0
-grow_horizontal = 2
-text = "Quit Game"
-
 [node name="Panel" type="Panel" parent="Control"]
 layout_mode = 1
 anchors_preset = 8
@@ -86,3 +36,40 @@ offset_bottom = 112.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 232.0
+alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="Control/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+text = "Main Menu"
+
+[node name="SaveGameButton" type="Button" parent="Control/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+text = "Save Game"
+
+[node name="SaveNameInput" type="LineEdit" parent="Control/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Enter Save Text"
+alignment = 1
+
+[node name="LoadGameButton" type="Button" parent="Control/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+text = "Load Save
+"
+
+[node name="NextLevelButton" type="Button" parent="Control/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+text = "Next Level"
+
+[node name="QuitGameButton" type="Button" parent="Control/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+text = "Quit Game"
