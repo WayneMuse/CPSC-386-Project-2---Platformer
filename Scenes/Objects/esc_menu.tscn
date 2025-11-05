@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dsej7px63vceb"]
+[gd_scene load_steps=3 format=3 uid="uid://dsej7px63vceb"]
 
 [ext_resource type="Script" uid="uid://bqahov5b3xshl" path="res://Scripts/PauseMenu.gd" id="1_ds4rd"]
+[ext_resource type="StyleBox" uid="uid://dhncc61gybyqf" path="res://Scenes/Objects/background_panel.tres" id="2_ywrq8"]
 
 [node name="Esc Menu" type="CanvasLayer"]
 process_mode = 3
@@ -22,54 +23,52 @@ grow_vertical = 2
 size_flags_horizontal = 0
 script = ExtResource("1_ds4rd")
 
-[node name="Panel" type="Panel" parent="Control"]
+[node name="Background" type="PanelContainer" parent="Control"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -72.0
-offset_top = -136.0
-offset_right = 72.0
-offset_bottom = 112.0
+offset_left = -48.0
+offset_top = -103.0
+offset_right = 48.0
+offset_bottom = 103.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
+theme_override_styles/panel = ExtResource("2_ywrq8")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
-layout_mode = 0
-offset_right = 128.0
-offset_bottom = 232.0
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Background"]
+layout_mode = 2
 alignment = 1
 
-[node name="MainMenuButton" type="Button" parent="Control/VBoxContainer"]
+[node name="MainMenuButton" type="Button" parent="Control/Background/VBoxContainer"]
 z_index = 1
 layout_mode = 2
 text = "Main Menu"
 
-[node name="SaveGameButton" type="Button" parent="Control/VBoxContainer"]
+[node name="SaveGameButton" type="Button" parent="Control/Background/VBoxContainer"]
 z_index = 1
 layout_mode = 2
 text = "Save Game"
 
-[node name="SaveNameInput" type="LineEdit" parent="Control/VBoxContainer"]
+[node name="SaveNameInput" type="LineEdit" parent="Control/Background/VBoxContainer"]
 layout_mode = 2
 placeholder_text = "Enter Save Text"
 alignment = 1
 
-[node name="LoadGameButton" type="Button" parent="Control/VBoxContainer"]
+[node name="LoadGameButton" type="Button" parent="Control/Background/VBoxContainer"]
 z_index = 1
 layout_mode = 2
 text = "Load Save
 "
 
-[node name="NextLevelButton" type="Button" parent="Control/VBoxContainer"]
+[node name="NextLevelButton" type="Button" parent="Control/Background/VBoxContainer"]
 z_index = 1
 layout_mode = 2
 text = "Next Level"
 
-[node name="QuitGameButton" type="Button" parent="Control/VBoxContainer"]
+[node name="QuitGameButton" type="Button" parent="Control/Background/VBoxContainer"]
 z_index = 1
 layout_mode = 2
 text = "Quit Game"

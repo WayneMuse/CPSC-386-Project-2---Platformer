@@ -22,14 +22,7 @@ func _on_new_game_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Levels/level1.tscn")
 
 func _on_load_game_pressed():
-	GameManager.load_game()
-	
-	if GameManager.lastLevel == "Main":
-		get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
-	if GameManager.lastLevel == "Area1":
-		get_tree().change_scene_to_file("res://Scenes/Levels/DemoLevel.tscn")
-	if GameManager.lastLevel == "Area2":
-		get_tree().change_scene_to_file("res://Scenes/Levels/level2.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/load_menu.tscn")
 
 func _on_settings_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Levels/settings.tscn")

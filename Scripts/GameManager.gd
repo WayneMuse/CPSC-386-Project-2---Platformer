@@ -7,10 +7,42 @@ var lastLevel = "Main"
 var showingMenu 	= false
 
 const LAST_SAVE_PATH = "user://last_save.json"
+const SETTINGS_PATH = "user://settings.json"
 
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	load_settings()
 	print("GameManager ready!")
+
+func load_settings():
+	if not FileAccess.file_exists(SETTINGS_PATH):
+		print("No settings file found. Using defaults.")
+		return # Nothing to load
+	
+	var file = FileAccess.open(SETTINGS_PATH, FileAccess.READ)
+	
+	if file == null:
+		print("Error: Could not open settings file for reading.")
+		return
+	
+	var json_string = file.get_as_text()
+	file.close()
+	var parse_result = JSON.parse_string(json_string)
+	
+	if parse_result == null:
+		print("Error: Could not parse settings file JSON.")
+		return
+	
+	var sfx_bus = AudioServer.get_bus_index("SFX")
+	var music_bus = AudioServer.get_bus_index("Music")
+	
+	var sfx_vol_db = parse_result.get("sfx_volume_db", 0.0)
+	var music_vol_db = parse_result.get("music_volume_db", 0.0)
+	
+	AudioServer.set_bus_volume_db(sfx_bus, sfx_vol_db)
+	AudioServer.set_bus_volume_db(music_bus, music_vol_db)
+	
+	print("Audio settings loaded.")
 
 func save_game(save_name: String):
 	var save_path = "user://%s.json" % save_name
@@ -44,51 +76,43 @@ func save_game(save_name: String):
 	last_save_file.close()
 	print("Set last save to: ", save_name)
 
-func load_game():
-	# 1. Check if the "last_save.json" file exists
-	if not FileAccess.file_exists(LAST_SAVE_PATH):
-		print("No last save file found.")
-		return # Nothing to load
-		
-	# 2. Open the "last_save.json" file to find out *which* file to load
-	var last_save_file = FileAccess.open(LAST_SAVE_PATH, FileAccess.READ)
-	if last_save_file == null:
-		print("Error: Could not open last save file for reading.")
-		return
-		
-	# 3. Parse it to get the name
-	var last_save_json = JSON.parse_string(last_save_file.get_as_text())
-	last_save_file.close()
-	
-	if last_save_json == null or not last_save_json.has("last_save_name"):
-		print("Error: Could not parse last save file.")
-		return
-		
-	var save_name = last_save_json.last_save_name
+func load_game_by_name(save_name: String):	
 	var save_path = "user://%s.json" % save_name
 	
-	# 4. Now, load the actual save file using the retrieved name
+	# 1. Check if the save file exists
 	if not FileAccess.file_exists(save_path):
 		print("Error: Save file not found: ", save_path)
 		return
 		
+	# 2. Open the file for reading
 	var file = FileAccess.open(save_path, FileAccess.READ)
 	if file == null:
 		print("Error: Could not open save file for reading: ", save_path)
 		return
 		
-	# 5. Read, parse, and apply the data
+	# 3. Read, parse, and apply the data
 	var json_string = file.get_as_text()
 	file.close()
 	
 	var parse_result = JSON.parse_string(json_string)
 	
 	if parse_result == null:
-		print("Error: Could not parse save file JSON.")
+		print("Error: Could not parse save file JSON from ", save_path)
 		return
 		
 	lastLevel = parse_result.get("lastLevel", "Main")
 	score = parse_result.get("score", 0)
+	
+	# 4. Update the "last_save.json" to this newly loaded file
+	var last_save_file = FileAccess.open(LAST_SAVE_PATH, FileAccess.WRITE)
+	if last_save_file == null:
+		print("Error: Could not update last save file.")
+		return
+		
+	var last_save_data = {"last_save_name": save_name}
+	last_save_file.store_string(JSON.stringify(last_save_data))
+	last_save_file.close()
+	
 	print("Game loaded successfully from: ", save_path)
 	print("Loaded data: ", parse_result)
 

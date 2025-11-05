@@ -9,12 +9,12 @@ var SaveNameInput
 
 func _ready():
 	# Assign buttons manually
-	MainMenu 		= $VBoxContainer/MainMenuButton
-	SaveGame 		= $VBoxContainer/SaveGameButton
-	LoadGame 		= $VBoxContainer/LoadGameButton
-	NextLevel 		= $VBoxContainer/NextLevelButton
-	QuitGame 		= $VBoxContainer/QuitGameButton
-	SaveNameInput 	= $VBoxContainer/SaveNameInput
+	MainMenu 		= $Background/VBoxContainer/MainMenuButton
+	SaveGame 		= $Background/VBoxContainer/SaveGameButton
+	LoadGame 		= $Background/VBoxContainer/LoadGameButton
+	NextLevel 		= $Background/VBoxContainer/NextLevelButton
+	QuitGame 		= $Background/VBoxContainer/QuitGameButton
+	SaveNameInput 	= $Background/VBoxContainer/SaveNameInput
 
 
 	
@@ -34,21 +34,10 @@ func _on_main_menu_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
 
 func _on_load_game_pressed():
+	GameManager.unpause()
 	$"/root/EscMenu".hide()
 	
-	GameManager.load_game()
-	
-	match GameManager.lastLevel:
-		"Main":
-			get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
-		"Area1":
-			get_tree().change_scene_to_file("res://Scenes/Levels/level1.tscn")
-		"Area2":
-			get_tree().change_scene_to_file("res://Scenes/Levels/level2.tscn")
-		#"Area3":
-			#get_tree().change_scene_to_file("res://Scenes/Levels/level3.tscn")
-	
-	GameManager.unpause()
+	get_tree().change_scene_to_file("res://Scenes/Levels/load_menu.tscn")
 
 func _on_save__game_pressed():	
 	var save_name = SaveNameInput.text

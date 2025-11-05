@@ -18,3 +18,7 @@ res://Scripts/GameManager.gd
 res://Scripts/SaveManager.gd
 res://Scripts/main_menu.gd
 res://Scenes/Levels/level1.tscn
+res://Scripts/settings.gd
+res://Scenes/Levels/load_menu.tscn
+res://Scripts/load_menu.gd
+res://Scripts/controls.gd
