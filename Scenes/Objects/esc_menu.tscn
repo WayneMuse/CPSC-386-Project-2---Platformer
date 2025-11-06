@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsej7px63vceb"]
 
 [ext_resource type="Script" uid="uid://bqahov5b3xshl" path="res://Scripts/PauseMenu.gd" id="1_ds4rd"]
-[ext_resource type="StyleBox" uid="uid://dhncc61gybyqf" path="res://Scenes/Objects/background_panel.tres" id="2_ywrq8"]
+[ext_resource type="StyleBox" uid="uid://b2u3cv4jy1m10" path="res://Scenes/Objects/background_panel.tres" id="2_ywrq8"]
 
 [node name="Esc Menu" type="CanvasLayer"]
 process_mode = 3

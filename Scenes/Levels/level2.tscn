@@ -12,14 +12,14 @@
 [ext_resource type="Texture2D" uid="uid://dxcwcsaj2o7k1" path="res://Assets/Sprites/GoldCoin.png" id="9_56d2c"]
 [ext_resource type="AudioStream" uid="uid://3dh8wubhktqo" path="res://Assets/Sound/InGameMusic.mp3" id="11_pyd1a"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jydn8"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pyd1a"]
 texture = ExtResource("8_hpjhc")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_pwvbg"]
-sources/0 = SubResource("TileSetAtlasSource_jydn8")
+sources/0 = SubResource("TileSetAtlasSource_pyd1a")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxvyr"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7bax"]
 texture = ExtResource("9_56d2c")
 0:0/0 = 0
 1:0/0 = 0
@@ -28,9 +28,9 @@ texture = ExtResource("9_56d2c")
 4:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_t6y87"]
-sources/0 = SubResource("TileSetAtlasSource_bxvyr")
+sources/0 = SubResource("TileSetAtlasSource_o7bax")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7bax"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_flysx"]
 texture = ExtResource("7_6a7cf")
 0:0/next_alternative_id = 8
 0:0/0 = 0
@@ -6325,7 +6325,7 @@ texture = ExtResource("7_6a7cf")
 
 [sub_resource type="TileSet" id="TileSet_b2fon"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_o7bax")
+sources/0 = SubResource("TileSetAtlasSource_flysx")
 
 [node name="Level" type="Node2D"]
 

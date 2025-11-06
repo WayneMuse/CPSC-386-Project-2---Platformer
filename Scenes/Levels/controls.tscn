@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://h4hd8go4d75g"]
 
 [ext_resource type="Script" uid="uid://v1yp25xfk41n" path="res://Scripts/controls.gd" id="1_jjiey"]
-[ext_resource type="StyleBox" uid="uid://dhncc61gybyqf" path="res://Scenes/Objects/background_panel.tres" id="2_tkihd"]
+[ext_resource type="StyleBox" uid="uid://b2u3cv4jy1m10" path="res://Scenes/Objects/background_panel.tres" id="2_tkihd"]
 
 [node name="Controls" type="Control"]
 layout_mode = 3
