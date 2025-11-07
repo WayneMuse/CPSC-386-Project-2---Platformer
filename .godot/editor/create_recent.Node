@@ -1,3 +1,4 @@
+Node2D
 AnimationPlayer
 CollisionShape2D
 Sprite2D
@@ -5,7 +6,6 @@ RemoteTransform2D
 AnimatableBody2D
 PathFollow2D
 Path2D
-Node2D
 PanelContainer
 Label
 VBoxContainer

@@ -40,7 +40,8 @@ WALL JUMP - SPACEBAR AND TOUCHING WALL
 
 PAUSE - P
 QUIT - TAB
-MAIN MENU - ESC
+Game Menu - ESC
+Note: to save you must input a name in game menu
 "
 fit_content = true
 horizontal_alignment = 1

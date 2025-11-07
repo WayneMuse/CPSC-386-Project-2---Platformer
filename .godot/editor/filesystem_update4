@@ -1,6 +1,6 @@
 res://default_env.tres
-res://Scenes/Objects/background_panel.tres
 res://Scenes/Levels/level3.tscn
+res://Scenes/Objects/background_panel.tres
 res://Scenes/Levels/DemoLevel.tscn
 res://Scenes/Levels/level2.tscn
 res://Scenes/Objects/esc_menu.tscn
@@ -15,5 +15,6 @@ res://Scenes/Levels/settings.tscn
 res://Scenes/Levels/controls.tscn
 res://Scenes/Levels/winscreen.tscn
 res://Scenes/Objects/user_interface.tscn
-res://Scripts/platform.gd
-res://Scripts/Player.gd
+res://Scenes/Objects/platform.tscn
+res://Scripts/PauseMenu.gd
+res://README.md

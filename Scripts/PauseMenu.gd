@@ -6,6 +6,7 @@ var LoadGame
 var NextLevel
 var QuitGame
 var SaveNameInput
+#var LevelCounter = 0
 
 func _ready():
 	# Assign buttons manually
@@ -26,11 +27,36 @@ func _ready():
 	NextLevel.pressed.connect(_on_next_level_pressed)
 
 func _on_next_level_pressed() -> void:
+	# Hide menu and unpause the game
 	$"/root/EscMenu".hide()
+	GameManager.unpause()
+
+	# Get current scene file name
+	var current_scene := get_tree().current_scene
+	if not current_scene:
+		print("No current scene loaded!")
+		return
+
+	var scene_name := current_scene.scene_file_path.get_file().get_basename()
+
+	# Check which level we're in and go to the next one
+	if scene_name == "level1":
+		get_tree().change_scene_to_file("res://Scenes/Levels/level2.tscn")
+		print("leaving scene ", scene_name, " moving to level2")
+	elif scene_name == "level2":
+		get_tree().change_scene_to_file("res://Scenes/Levels/level3.tscn")
+		print("leaving scene ", scene_name, " moving to level3")
+	elif scene_name == "level3 ":
+		get_tree().change_scene_to_file("res://Scenes/Levels/winscreen.tscn")
+		print("leaving scene", scene_name, " moving to winscreen")
+	else:
+		print("No next level defined for: ", scene_name)
 #	increment level counter by 1 to have "level" + counter + ".tscn" transfer scenes properly
+	#i couldve brite but this way is way easier lol
 
 func _on_main_menu_pressed():
 	$"/root/EscMenu".hide()
+	GameManager.unpause()
 	get_tree().change_scene_to_file("res://Scenes/Levels/main_menu.tscn")
 
 func _on_load_game_pressed():

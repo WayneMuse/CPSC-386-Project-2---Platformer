@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://h7ye2y74qngt" path="res://Assets/Sprites/background0.png" id="2_pyd1a"]
 [ext_resource type="PackedScene" uid="uid://b3ew3smby2m52" path="res://Scenes/Objects/door.tscn" id="3_o7bax"]
 [ext_resource type="Script" uid="uid://blte2q8dea23i" path="res://Scripts/maping.gd" id="4_flysx"]
-[ext_resource type="PackedScene" uid="uid://bkcra85hdiytf" path="res://Scenes/Levels/winscreen.tscn" id="4_o7bax"]
+[ext_resource type="PackedScene" uid="uid://c5x5hu27g3j5n" path="res://Scenes/Levels/level3.tscn" id="4_pyd1a"]
 [ext_resource type="PackedScene" uid="uid://c61lva6dhrp3t" path="res://Scenes/Objects/spike.tscn" id="5_0jhw5"]
 [ext_resource type="PackedScene" uid="uid://42oiec8xkui7" path="res://Scenes/Objects/coin.tscn" id="6_eqosv"]
 [ext_resource type="Texture2D" uid="uid://cha4le62ormcv" path="res://Assets/Sprites/TerrainTileSet.png" id="7_6a7cf"]
@@ -6341,7 +6341,7 @@ metadata/_edit_lock_ = true
 
 [node name="Door" parent="." instance=ExtResource("3_o7bax")]
 position = Vector2(-121, -506)
-next_scene = ExtResource("4_o7bax")
+next_scene = ExtResource("4_pyd1a")
 
 [node name="Maping" type="Node2D" parent="."]
 script = ExtResource("4_flysx")
